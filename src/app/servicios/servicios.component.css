@@ -1,0 +1,70 @@
+
+.pixel-servicios {
+  background: #111;
+  color: #00ff00;
+  padding: 48px 0;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive, monospace;
+}
+.pixel-servicios h2 {
+  font-size: 2em;
+  margin-bottom: 32px;
+  color: #00ff00;
+}
+.servicios-grid {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.servicio-card {
+  width: 260px;
+  background: #222;
+  border: 4px solid #00ff00;
+  border-radius: 16px;
+  padding: 24px;
+  color: #fff;
+  box-shadow: 8px 8px 0 #00ff00;
+  position: relative;
+  font-size: 1em;
+}
+.servicio-card.blue {
+  border-color: #00cfff;
+  box-shadow: 8px 8px 0 #00cfff;
+}
+.servicio-card.yellow {
+  border-color: #ffd600;
+  box-shadow: 8px 8px 0 #ffd600;
+}
+.servicio-card.pink {
+  border-color: #d100ff;
+  box-shadow: 8px 8px 0 #d100ff;
+}
+.servicio-card h3 {
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+.servicio-card p {
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+.servicio-card span {
+  font-size: 0.9em;
+  color: #fff;
+  display: block;
+  margin-bottom: 16px;
+}
+.servicio-card button {
+  background: #000;
+  color: #fff;
+  border: 2px solid #00ff00;
+  font-family: inherit;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.servicio-card .icon {
+  font-size: 2em;
+  margin-top: 8px;
+}

@@ -1,0 +1,43 @@
+
+.pixel-footer {
+  background: #111;
+  color: #fff;
+  padding: 24px 0;
+  font-family: 'Press Start 2P', cursive, monospace;
+  border-top: 8px dotted #ffd600;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 32px;
+}
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer-logo img {
+  width: 48px;
+  height: 48px;
+  image-rendering: pixelated;
+}
+.footer-logo span {
+  font-size: 1em;
+  color: #ffd600;
+}
+.footer-social {
+  display: flex;
+  gap: 16px;
+}
+.footer-social img {
+  width: 28px;
+  height: 28px;
+  image-rendering: pixelated;
+}
+.footer-copy {
+  font-size: 1em;
+  color: #fff;
+}
