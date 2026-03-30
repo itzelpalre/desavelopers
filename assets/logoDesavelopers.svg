@@ -1,0 +1,8 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 252" width="410" height="252">
+	<defs>
+		<image width="1102.1099853515625" height="688.083984375" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR4AWJiYGBgAAAAAP//XRcpzQAAAAZJREFUAwAADwADJDd96QAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Objeto inteligente vectorial" href="#img1" transform="matrix(.372,0,0,.372,0,.845)"/>
+</svg>
