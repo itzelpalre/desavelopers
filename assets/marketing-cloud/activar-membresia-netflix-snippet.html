@@ -1,0 +1,25 @@
+%%[
+  VAR @clienteParam, @encodedClienteParam, @baseNetflixUrl, @ctaUrl
+
+  /* Campo por cliente enviado desde Salesforce/DE/Journey */
+  SET @clienteParam = AttributeValue("NetflixRedirectParam")
+
+  /* URL base de destino */
+  SET @baseNetflixUrl = "https://www.netflix.com/"
+
+  /* Fallback si no llega valor por cliente */
+  IF EMPTY(@clienteParam) THEN
+    SET @ctaUrl = @baseNetflixUrl
+  ELSE
+    /* Codifica para evitar romper query params */
+    SET @encodedClienteParam = URLEncode(@clienteParam, 1, 1)
+    SET @ctaUrl = Concat(@baseNetflixUrl, "?tp_ref=", @encodedClienteParam)
+  ENDIF
+]%%
+
+<!-- Reemplaza el href actual del botón por este -->
+<a
+  style="text-decoration:none; display:inline-block; padding:12px 20px;"
+  href="%%=RedirectTo(@ctaUrl)=%%"
+  class="btn-membresia"
+>Activar mi membresía</a>
