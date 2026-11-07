@@ -2,14 +2,32 @@
   <h2>Portafolio</h2>
   <p>Nuestros Proyectos Destacados</p>
   <div class="portafolio-grid">
-    <div class="proyecto-card purple">
-      <img src="assets/proyecto1.png" alt="Proyecto 1" />
+    <div
+      class="proyecto-card purple"
+      role="button"
+      tabindex="0"
+      (click)="openImage('assets/webColoreaAprende.jpg', 'Web Colorea Aprende')"
+      (keydown.enter)="openImage('assets/webColoreaAprende.jpg', 'Web Colorea Aprende')"
+      (keydown.space)="openImage('assets/webColoreaAprende.jpg', 'Web Colorea Aprende')"
+    >
+      <img src="assets/webColoreaAprende.jpg" alt="Web Colorea Aprende" />
     </div>
-    <div class="proyecto-card yellow">
-      <img src="assets/proyecto2.png" alt="Proyecto 2" />
+    <div
+      class="proyecto-card yellow"
+      role="button"
+      tabindex="0"
+      (click)="openImage('assets/webMoncar.jpg', 'Web Moncar')"
+      (keydown.enter)="openImage('assets/webMoncar.jpg', 'Web Moncar')"
+      (keydown.space)="openImage('assets/webMoncar.jpg', 'Web Moncar')"
+    >
+      <img src="assets/webMoncar.jpg" alt="Web Moncar" />
     </div>
-    <div class="proyecto-card blue">
-      <img src="assets/proyecto3.png" alt="Proyecto 3" />
+  </div>
+
+  <div class="image-popup-overlay" *ngIf="selectedImage" (click)="closeImage()">
+    <div class="image-popup-modal" (click)="$event.stopPropagation()">
+      <button class="popup-close" type="button" (click)="closeImage()">✕</button>
+      <img [src]="selectedImage" [alt]="selectedAlt" />
     </div>
   </div>
 </section>

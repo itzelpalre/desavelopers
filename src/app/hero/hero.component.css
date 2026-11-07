@@ -68,6 +68,8 @@
   cursor: pointer;
   box-shadow: 5px 5px 0 #000;
   transition: transform 0.2s, box-shadow 0.2s;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .pixel-btn:hover {
