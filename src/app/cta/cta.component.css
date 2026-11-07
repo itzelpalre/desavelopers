@@ -4,7 +4,21 @@
   padding: 48px 0;
   text-align: center;
   font-family: 'Press Start 2P', cursive, monospace;
-  border-bottom: 8px dotted #000;
+  position: relative;
+  padding-bottom: 22px;
+}
+
+.pixel-cta::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 10px;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(to right, #000 0 4px, transparent 4px 10px) 0 0 / 100% 4px repeat-x,
+    repeating-linear-gradient(to right, #000 0 4px, transparent 4px 8px) 0 6px / 100% 4px repeat-x;
 }
 .pixel-cta h2 {
   font-size: 2em;
