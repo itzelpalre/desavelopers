@@ -1,4 +1,7 @@
 <section class="pixel-contacto" id="contacto">
+  <img class="personaje personaje-izq" src="assets/personaje1.svg" alt="Personaje izquierdo" />
+  <img class="personaje personaje-der" src="assets/personaje2.svg" alt="Personaje derecho" />
+
   <div class="contacto-info">
     <h2>Contáctanos</h2>
     <p><strong>Dirección:</strong> Ciudad de México, México</p>
@@ -7,12 +10,15 @@
       <a href="https://www.facebook.com/desavelopers" target="_blank" rel="noopener noreferrer"><img src="assets/facebook.png" alt="Facebook" /></a>
     </div>
   </div>
-  <form class="contacto-form" action="mailto:itzelpalmareyes@gmail.com" method="post" enctype="text/plain">
-    <h3>Formulario de Contacto</h3>
-    <input type="text" name="Nombre" placeholder="Nombre" required />
-    <input type="tel" name="Teléfono" placeholder="Teléfono" required />
-    <input type="email" name="Email" placeholder="Email" required />
-    <textarea name="Mensaje" placeholder="Mensaje" required></textarea>
-    <button type="submit" class="pixel-btn">Enviar</button>
-  </form>
+  <div class="contacto-form-wrap">
+    <img class="personaje-form" src="assets/personajeForm.svg" alt="Personaje formulario" />
+    <form class="contacto-form" action="mailto:itzelpalmareyes@gmail.com" method="post" enctype="text/plain">
+      <h3>Formulario de Contacto</h3>
+      <input type="text" name="Nombre" placeholder="Nombre" required />
+      <input type="tel" name="Teléfono" placeholder="Teléfono" required />
+      <input type="email" name="Email" placeholder="Email" required />
+      <textarea name="Mensaje" placeholder="Mensaje" required></textarea>
+      <button type="submit" class="pixel-btn">Enviar</button>
+    </form>
+  </div>
 </section>
